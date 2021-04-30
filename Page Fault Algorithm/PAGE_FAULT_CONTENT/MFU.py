@@ -40,12 +40,12 @@ def run():
                 # IF EQUAL TALLIES, FIFO IS UTILIZED
                 most_recently_used = max(flist_check, key=flist_check.get)
 
-                # REPLACEMENT OF THE PAGE THAT IS MOST RECENTLY USED
+                # REPLACEMENT OF THE PAGE THAT IS MOST RECENTLY USED and Sorting the First Come First Serve Basis
                 for j in range(len(frm_list)):
                     if frm_list[j] == most_recently_used:
                         frm_list[j] = i
                         tally[i] += 1
-                        
+
                         value = tally.pop(most_recently_used)
                         newDict = {most_recently_used: value}
                         tally.update(newDict)
