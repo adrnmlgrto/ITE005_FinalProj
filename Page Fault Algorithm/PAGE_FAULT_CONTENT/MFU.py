@@ -45,6 +45,10 @@ def run():
                     if frm_list[j] == most_recently_used:
                         frm_list[j] = i
                         tally[i] += 1
+                        
+                        value = tally.pop(most_recently_used)
+                        newDict = {most_recently_used: value}
+                        tally.update(newDict)
             pg_fault += 1
         # CONDITION IF PAGE IS IN THE FRAME AND NO PAGE FAULT WILL OCCUR
         else:
