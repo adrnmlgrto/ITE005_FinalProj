@@ -24,8 +24,8 @@ def calcTime(processes, n):
     # for turnaround time
     turnAroundTime(processes, n, wt, tat)
  
-    # display the details
-    print("\nProcesses    Burst Time    Priority    Waiting",
+     # display the details
+    print("\nProcesses    Arrival Time    Burst Time    Priority    Waiting",
           "Time    Turn-Around Time")
     wait_total = 0
     turnAround_total = 0
@@ -34,6 +34,7 @@ def calcTime(processes, n):
         wait_total = wait_total + wt[i]
         turnAround_total = turnAround_total + tat[i]
         print(" ", processes[i][0], "\t\t",
+                   0, "\t\t",
                    processes[i][1], "\t\t",
                    processes[i][2], "\t\t",
                    wt[i], "\t\t", tat[i])
