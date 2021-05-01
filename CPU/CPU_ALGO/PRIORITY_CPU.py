@@ -24,7 +24,11 @@ def calcTime(processes, n):
     # for turnaround time
     turnAroundTime(processes, n, wt, tat)
  
+
+     # display the details
+
     # display the details
+
     print("\nProcesses    Arrival Time    Burst Time    Priority    Waiting",
           "Time    Turn-Around Time")
     wait_total = 0
