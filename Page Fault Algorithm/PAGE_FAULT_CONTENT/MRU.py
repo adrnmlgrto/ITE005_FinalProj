@@ -34,4 +34,4 @@ def run():
         most_recently_used = i
         
     #Prints the page frame
-    print("{}".format(pageFaults))
+    print("Total Page Faults: {}".format(pageFaults))
