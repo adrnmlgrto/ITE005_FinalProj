@@ -2,10 +2,6 @@ def run():
     #initializing variables
     frame,pageListString,fault,pageFault = [],[],0,'No'
 
-    #insertion of number of frames in variable capacity as integer
-    print("Enter the number of frames: ",end="")
-    capacity = int(input())
-
     #insertion of number of reference string in variable referenceStringArray as integer array
     print("Enter the reference string: ",end="")
     #the type of input is string, this will be later then processed by the following functions to be array of strings:
@@ -14,6 +10,12 @@ def run():
     #strip() removes spaces at the beginning and end of the string to clean the string for user error
     #split() splits array to list elements based on separator (default whitespace)
     referenceStringArray = list(map(int,input().strip().split()))
+
+    #insertion of number of frames in variable capacity as integer
+    print("Enter the number of frames: ",end="")
+    capacity = int(input())
+
+
     #loops in the every element of referenceStringArray
     for i in referenceStringArray:
         #checks if i is not in the frame
