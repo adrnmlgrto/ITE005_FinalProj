@@ -91,4 +91,4 @@ def run():
     frame_size = int(input("Enter Frame size: "))
 
     #Displays the total page fault
-    print(get_page_fault(queue, frame_size))
+    print("Total Page Fault:", get_page_fault(queue, frame_size))
