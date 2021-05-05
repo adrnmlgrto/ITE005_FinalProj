@@ -44,11 +44,11 @@ def run():
                 get = nothing_list[0]
                 return page_array.index(get)
             elif len(nothing_list) > 1:
-                
-                get_index = FIFO_array[0]
-                for current_nothing in nothing_list:
-                    if page_array[get_index] == current_nothing:
-                        return page_array.index(current_nothing)
+                 for i in range (0, len(FIFO_array)):
+                    get_index = FIFO_array[i]
+                    for current_nothing in nothing_list:
+                        if page_array[get_index] == current_nothing:
+                            return page_array.index(current_nothing)
             else:
                 return position
 
